@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="styles/open-props.css" rel="stylesheet"/>
+    <link href="styles/index.css" rel="stylesheet">
+    <script defer src="scripts/helpers.js"></script>
+    <script defer src="scripts/movie-selection.js"></script>
+    <script defer src="scripts/critics.js"></script>
+    <script defer src="scripts/snacks.js"></script>
+    <script defer src="scripts/seats.js"></script>
+    <script defer src="scripts/movie-ticket.js"></script>
+    <script defer src="scripts/index.js"></script>
+    <link rel="icon" href="assets/images/Logo_Favicon.png" type="image/png">
+    <title>Cinema</title>
+
+</head>
+<body>
+<main id="page-container">
+    <div id="page-content">
+        <div id="page">
+            <header id="header">
+                <nav class="nav">
+                    <img alt="Logo" src="assets/images/Logo_Farbig.webp">
+                </nav>
+            </header>
+            <section id="landing">
+                <h1 class="hero">
+                    End your day in the best way.
+                </h1>
+                <video autoplay loop muted>
+                    <source src="assets/videos/header.mp4" type="video/mp4">
+                </video>
+            </section>
+            <section id="movie-selection">
+                <h2 class="font-serif title">
+                    Deine Auswahl an Highlights
+                </h2>
+                <p class="section-description font-sans">Entdecke die besten Filme, die dein Herz höher schlagen lassen.
+                    Unsere sorgfältige Auswahl bringt dir das Beste aus Hollywood.</p>
+                <div id="movie-carousel"></div>
+            </section>
+            <section id="critics">
+                <h2 class="font-serif title">
+                    Erlebnisse, die im Gedächtnis bleiben
+                </h2>
+                <p class="section-description font-sans">Unsere Besucher schwärmen von unvergesslichen Kinoabenden.
+                    Lies ihre Kritiken und erfahre, warum unser Kino ein Ort voller Magie und unvergesslicher Erlebnisse ist.
+                    Hier entstehen Erinnerungen, die bleiben.</p>
+                <div id="critics-container"></div>
+            </section>
+            <section id="snacks">
+                <h2 class="font-serif title">
+                    Snacks im Rampenlicht
+                </h2>
+                <p class="section-description font-sans">Genieße unsere köstlichen Kino-Menüs, die deinen Filmabend perfekt machen.
+                    Von frischem Popcorn bis hin zu eiskalten Snacks –
+                    bei uns findest du alles, was das Herz begehrt. Lass dich kulinarisch verwöhnen!</p>
+                <div class="snacks-display">
+                    <div class="font-sans" id="snack-info">
+                        <span></span>
+                    </div>
+                    <div id="snacks-container">
+                        <img alt="Spotlight" class="display spotlight" src="assets/images/spotlight.png">
+                        <div class="snack display" data-snack="popcorn">
+                            <div class="snack-card">
+
+                                <img alt="Popcorn" class="snack-image" id="snacks-popcorn"
+                                     src="assets/images/popcorn.png">
+                            </div>
+                        </div>
+                        <div class="snack snack-one" data-snack="chips">
+                            <div class="snack-card">
+                                <img alt="Nachos" class="snack-image" id="snacks-chips"
+                                     src="assets/images/nachos.png">
+                            </div>
+                        </div>
+                        <div class="snack snack-two" data-snack="sweets">
+                            <div class="snack-card">
+                                <img alt="Eis" class="snack-image" id="snacks-sweets"
+                                     src="assets/images/eis.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="seats">
+                <h2 class="font-serif title">
+                    Finde den passenden Spot
+                </h2>
+                <p class="section-description font-sans">Ob du es lieber zentral oder etwas ruhiger magst – hier findest du deinen
+                    perfekten Platz, um den Film in vollen Zügen zu genießen.</p>
+                <div class="seats-display">
+                    <div class="seats-container">
+                        <div class="screen-container">
+                            <div class="screen"></div>
+                        </div>
+                    </div>
+                    <div id="seats-selection">
+                        <h3 class="font-serif" id="seat-helper-text">Deine Auswahl:&nbsp;<span
+                                class="seat-selection-screen font-sans"></span></h3>
+                    </div>
+                </div>
+            </section>
+            <section id="movie-ticket">
+                <div class="button-container">
+                    <img alt="Ticket Button" src="assets/images/Ticket_Button_1.webp">
+                    <img alt="Ticket Button" id="ticket-button-ripper" src="assets/images/Ticket_Button_2.webp">
+                </div>
+            </section>
+            <footer class="font-sans" id="footer">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <img alt="Logo" class="logo" src="assets/images/Logo_Weiß.webp">
+                        <div class="location">
+                            <img alt="Location" src="assets/images/Pin_Icon.webp">
+                            <span class="location-description">Mos Eisley 5
+                            Tatooine</span>
+                        </div>
+                        <div class="telephone">
+                            <img alt="Telephone" src="assets/images/Telefon_Icon.webp">
+                            <a class="telephone-description" href="tel:5552366132">555 236-6132</a>
+                        </div>
+                        <div class="email">
+                            <img alt="Email" src="assets/images/Mail_Icon.webp">
+                            <a href="mailto:info@spotlight-movies.de">info@spotlight-movies.de</a>
+                        </div>
+                    </div>
+                    <div class="footer-column opening-times">
+                        <p>Unsere Öffnungszeiten</p>
+                        <p class="opening-time-slots">Di-Do: 14 Uhr - 22 Uhr
+                            Fr & Sa: 11 Uhr - 00 Uhr
+                            Sonntag: 11 Uhr - 22 Uhr</p>
+                    </div>
+                    <div class="footer-column links">
+                        <a href="#">Kontakt</a>
+                        <a href="#">Impressum</a>
+                        <a href="#">Datenschutz</a>
+                    </div>
+                    <div class="footer-column social-media">
+                        <p>Folge uns auf</p>
+                        <div class="social-media-links">
+                            <a href="#">
+                                <img alt="Instagram" src="assets/images/Instagram_Logo.webp">
+                            </a>
+                            <a href="#">
+                                <img alt="Youtube" src="assets/images/YouTube_Logo.webp">
+                            </a>
+                            <a href="#">
+                                <img alt="X" src="assets/images/X_Logo.webp">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-container">
+                    <p>© 2024 Spotlight movies GmbH. Alle Rechte vorbehalten.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</main>
+</body>
+</html>

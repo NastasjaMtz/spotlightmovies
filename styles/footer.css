@@ -1,0 +1,126 @@
+#footer {
+    background-color: rgb(var(--brand-1));
+    padding: var(--size-4);
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: rgb(var(--primary-light));
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .footer-content > *:not(:last-child) {
+        margin-bottom: var(--size-4);
+    }
+
+    .opening-times {
+        .opening-time-slots {
+            margin-top: var(--size-2);
+            white-space: pre-line;
+        }
+    }
+
+    .opening-times,
+    .social-media,
+    .links {
+        padding-left: var(--size-6);
+    }
+
+    .social-media-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        img {
+            width: var(--size-6);
+            aspect-ratio: auto;
+        }
+
+        a:not(:last-child) {
+            margin-right: var(--size-3);
+        }
+    }
+
+    .links,
+    .location,
+    .telephone,
+    .email {
+        a {
+            color: rgb(var(--primary-light));
+            text-decoration-style: dotted;
+            text-decoration-color: rgb(var(--primary-light));
+            text-underline-offset: var(--size-px-1);
+        }
+    }
+
+    .location,
+    .telephone,
+    .email {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+            width: var(--size-6);
+            aspect-ratio: auto;
+        }
+
+    }
+
+    .location {
+        .location-description {
+            white-space: pre-line;
+        }
+    }
+
+    .copyright-container {
+        margin-top: var(--size-4);
+        padding-top: var(--size-4);
+        width: 100%;
+        text-align: end;
+        color: rgb(var(--primary-light));
+        border-top: 1px solid rgb(var(--brand-2));
+        font-size: var(--font-size-0);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #footer {
+        padding: var(--size-8);
+        padding-bottom: var(--size-4);
+
+        .footer-content {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .footer-column {
+                max-width: 25%;
+            }
+
+            .social-media-links,
+            .location,
+            .telephone,
+            .email {
+                img {
+                    width: var(--size-8);
+                }
+            }
+        }
+
+        .copyright-container {
+            font-size: var(--font-size-1);
+        }
+    }
+}

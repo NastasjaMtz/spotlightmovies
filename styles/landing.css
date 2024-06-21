@@ -1,0 +1,32 @@
+#landing {
+    height: 100vh;
+    position: relative;
+
+    .hero {
+        font-size: var(--font-size-7);
+        color: rgb(var(--primary-light));
+        position: absolute;
+        width: 9ch;
+        text-align: right;
+        right: 0;
+        margin-top: var(--size-12);
+        margin-right: var(--size-5);
+        font-weight: bold;
+    }
+
+    video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #landing {
+        .hero {
+            width: 10ch !important;
+            margin-right: var(--size-9) !important;
+            font-size: var(--size-10);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+#header {
+    background-color: var(--primary-dark);
+    width: 100%;
+    padding: var(--size-2) 0;
+    color: rgb(var(--primary-light));
+    border-bottom: var(--border-size-1) solid #707070;
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        img {
+            height: var(--size-8);
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    #header {
+        padding: 0 var(--size-4) !important;
+
+        img {
+            height: var(--size-11) !important;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import "colors.css";
+@import "typography.css";
+@import "nav.css";
+@import "landing.css";
+@import "movie-selection.css";
+@import "critics.css";
+@import "snacks.css";
+@import "seats.css";
+@import "movie-ticket.css";
+@import "footer.css";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--primary-dark);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#page-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#page-content {
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+}
+
+#page {
+    scrollbar-gutter: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    display: flex;
+    flex: 1 1 auto;
+}

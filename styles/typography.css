@@ -1,0 +1,51 @@
+@font-face {
+    font-family: cinema-serif;
+    src: url("../assets/fonts/Baskervville-Regular.ttf");
+}
+
+@font-face {
+    font-family: cinema-sans;
+    src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: cinema-sans;
+    src: url("../assets/fonts/Montserrat-SemiBold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: cinema-sans;
+    src: url("../assets/fonts/Montserrat-Thin.ttf");
+    font-weight: 100;
+}
+
+.font-serif {
+    font-family: cinema-serif, ui-serif, serif;
+}
+
+.font-sans {
+    font-family: cinema-sans, system-ui, sans-serif;
+}
+
+.font-thin {
+    font-weight: 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+html, body {
+    line-height: var(--font-lineheight-3);
+    font-size: 24px;
+}
